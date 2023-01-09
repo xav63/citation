@@ -1,0 +1,13 @@
+h1, h2
+{
+    text-align: center;
+}
+.ensemble
+{
+    display: flex;
+    justify-content: space-around;
+}
+.gauche, .droite
+{
+    margin: 2rem;
+}
