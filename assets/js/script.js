@@ -12,11 +12,16 @@ let secondQuote = {
 
 let citation1 = document.getElementById("citation1");
 let citation2 = document.getElementById("citation2");
+let btn = document.getElementById("btn")
+let btn2 = document.getElementById("btn2")
 
 /*citation1.innerHTML = firstQuote.debut[0] + " " + firstQuote.milieu[0] + " " + firstQuote.fin[0];*/
-citation2.innerHTML = secondQuote.debut[0] + " " + secondQuote.milieu[0] + " " + secondQuote.fin[0];
+/*citation2.innerHTML = secondQuote.debut[0] + " " + secondQuote.milieu[0] + " " + secondQuote.fin[0];*/
 
-citation1.addEventListener('submit', function(){
-    let citation1 = document.getElementById("citation1");
+btn.addEventListener('click',function(){
     citation1.innerHTML = firstQuote.debut[0] + " " + firstQuote.milieu[0] + " " + firstQuote.fin[0];
-});
+})
+
+btn2.addEventListener('click',function(){
+    citation2.innerHTML = secondQuote.debut[0] + " " + secondQuote.milieu[0] + " " + secondQuote.fin[0];
+})
