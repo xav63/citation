@@ -1,3 +1,11 @@
+*
+{
+    font-style: italic;
+}
+body
+{
+    background-color: #f5f5f5;
+}
 h1, h2
 {
     text-align: center;
@@ -10,8 +18,4 @@ h1, h2
 .gauche, .droite
 {
     margin: 2rem;
-}
-.gauche
-{
-    background-image: url("assets/image/index.jpg");
 }
