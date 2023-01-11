@@ -11,3 +11,7 @@ h1, h2
 {
     margin: 2rem;
 }
+.gauche
+{
+    background-image: url("assets/image/index.jpg");
+}
