@@ -6,7 +6,7 @@ let gauchefin = ["mais on peut pas tromper mille fois une personne", "Emile.", "
 let droitedebut = ["Le doute tue plus", "Gardez toujours votre visage vers", "Que vous pensiez pouvoir", "Votre talent détermine ce que vous pouvez faire.", "Le bonheur de votre vie"];
 let droitemilieu = ["de rêve que l'échec", "le soleil, et les ombres tomberont", "ou non,", "votre motivation détermine combien vous êtes prêt à faire", "dépend de"];
 let droitefin = ["ne le fera jamais.", "derrière vous.", "vous avez raison.", "Votre attitude détermine à quel point vous le faites.", "la qualité de vos pensées."];
-
+// Déclaration variable
 let citation1 = document.getElementById("citation1");
 let citation2 = document.getElementById("citation2");
 let btn = document.getElementById("btn");
@@ -15,9 +15,7 @@ let menu = document.getElementById("menu");
 let menu2 = document.getElementById("menu2");
 
 
-// Génération aléatoire droite
-
-
+// Affectation du bouton
 btn.addEventListener('click', function () {
     if (menu.value == "0") {
         alert("Veuillez selectionnez un nombre")
