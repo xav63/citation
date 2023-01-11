@@ -9,34 +9,35 @@ let droitefin = ["ne le fera jamais.", "derrière vous.", "vous avez raison.", "
 
 let citation1 = document.getElementById("citation1");
 let citation2 = document.getElementById("citation2");
-let btn = document.getElementById("btn")
-let btn2 = document.getElementById("btn2")
-let menu = document.getElementById("menu")
-let menu2 = document.getElementById("menu2")
-// Génération aléatoire gauche
-let debut = [Math.floor(Math.random() * gauchedebut.length)];
-let milieu = [Math.floor(Math.random() * gauchemilieu.length)];
-let fin = [Math.floor(Math.random() * gauchefin.length)];
-// Génération aléatoire droite
-let debut2 = [Math.floor(Math.random() * droitedebut.length)];
-let milieu2 = [Math.floor(Math.random() * droitemilieu.length)];
-let fin2 = [Math.floor(Math.random() * droitefin.length)];
+let btn = document.getElementById("btn");
+let btn2 = document.getElementById("btn2");
+let menu = document.getElementById("menu");
+let menu2 = document.getElementById("menu2");
 
-/*citation1.innerHTML = firstQuote.debut[0] + " " + firstQuote.milieu[0] + " " + firstQuote.fin[0];*/
-/*citation2.innerHTML = secondQuote.debut[0] + " " + secondQuote.milieu[0] + " " + secondQuote.fin[0];*/
+
+// Génération aléatoire droite
+
 
 btn.addEventListener('click', function () {
     if (menu.value == "0") {
         alert("Veuillez selectionnez un nombre")
     }
     else {
+
+        // Reset du text
         citation1.innerHTML = "";
+        //Boucle pour afficher autant de citations
         for (let i = 0; i < menu.value; i++) {
-            citation1.innerHTML = gauchedebut[debut] + " " + gauchemilieu[milieu] + " " + gauchefin[fin];
+        // Génération aléatoire gauche
+            let debut = Math.floor(Math.random() * gauchedebut.length);
+            let milieu = Math.floor(Math.random() * gauchemilieu.length);
+            let fin = Math.floor(Math.random() * gauchefin.length);
+        //Affichage de la citation a la suite des autres grace à (+=)
+            citation1.innerHTML += gauchedebut[debut] + " " + gauchemilieu[milieu] + " " + gauchefin[fin] + "<br>";
         }
 
     }
-    
+
 })
 
 btn2.addEventListener('click', function () {
@@ -44,11 +45,18 @@ btn2.addEventListener('click', function () {
         alert("Veuillez selectionnez un nombre")
     }
     else {
+        // Reset du text
         citation2.innerHTML = "";
+        //Boucle pour afficher autant de citations
         for (let i = 0; i < menu2.value; i++) {
-            citation2.innerHTML = droitedebut[debut2] + " " + droitemilieu[milieu2] + " " + droitefin[fin2];
+        // Génération aléatoire droite
+            let debut2 = [Math.floor(Math.random() * droitedebut.length)];
+            let milieu2 = [Math.floor(Math.random() * droitemilieu.length)];
+            let fin2 = [Math.floor(Math.random() * droitefin.length)];
+        //Affichage de la citation a la suite des autres grace à (+=)
+            citation2.innerHTML += droitedebut[debut2] + " " + droitemilieu[milieu2] + " " + droitefin[fin2] + "<br>";
         }
 
     }
-    
+
 })
