@@ -6,7 +6,7 @@
 }
 body
 {
-    background-color: #f5f5f5;
+    background-color: #79eac8;
 }
 h1, h2
 {
@@ -20,4 +20,9 @@ h1, h2
 .gauche, .droite
 {
     margin: 2rem;
+}
+#btn, #btn2
+{
+    background-color: #18483a;
+    color: white;
 }
